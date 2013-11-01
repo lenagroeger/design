@@ -1,14 +1,28 @@
 
+  #exercise p {
+    margin-bottom: 20px;
+  }
+
+  #exercise img {
+    max-height: 250px;
+    padding: 10px 50px 20px 0px;
+  }
+
+  #exercise {
+    width: 800px
+  }
 
   #container {
     line-height: 1.6;
     text-align: left;
     line-height: 1.5;
-    margin:0px auto;
+    margin:20px auto 60px;
     padding:0;
     font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue", Helvetica, sans-serif;
-    width: 1000px
+    width: 1000px;
   }
+
+
 
   #container p code {
     margin: 0 2px;
@@ -16,9 +30,22 @@
     border: 1px solid #ebebeb;
     background-color: #f7f7f7;
     border-radius: 2px;
-    font-family: Monaco, Courier, monospace;
-    font-size: 12px;
-    color:black;
+    font-family: "Menlo", Courier, monospace;
+    font-size: 15px;
+    color: #666;
+  }
+
+  .lecture span {
+    float: left;
+    margin-right: 10px;
+    display: block;
+  }
+
+
+  .lecture {
+    clear: both;
+    display: inline-block;
+    margin: 30px 0px 10px;
   }
 
  .section > ol, .section > ul {
@@ -39,12 +66,9 @@
     background: #f7f7f7;
 }
 
-  /*#content a {
-    color: #0193a4;
-    text-decoration: none;
-  }*/
 
-  #content a:hover {
+
+  #content a:hover, #exercise a:hover {
     text-decoration: underline;
   }
 
@@ -59,7 +83,7 @@
 
   p {
     color: #444;
-    margin: 0 0 15px;
+    margin:0px;
     font-size: 15px;
     clear: both;
   }
@@ -73,25 +97,40 @@
 
 
   h2 {
-    font-family: 'Jacques Francois', serif;
-    font-size: 30px;
-    margin: 60px 0px 10px 0px;
-    color: #444;
+font-family: 'Jacques Francois', serif;
+font-size: 36px;
+color: #444;
+clear: both;
+margin-bottom: 5px;
   }
 
   h3 {
-    font-size: 12px;
+    font-size: 11px;
     float: left;
     text-transform: uppercase;
     letter-spacing: 1px;
     color:#444;
   }
 
+h3 a {
+  color:#f2dc99;
+
+}
+
+
+
+  h4 {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #444;
+    margin: 20px 0px 0px 0px;
+    clear: both;
+  }
   .section h3 {
-    background: #e9f0f5;
+    background: #4A93B4;
     padding: 5px 10px;
-    border-radius: 5px;
     font-weight: normal;
+    color:#fff;
   }
 
   p.talkers {
@@ -99,7 +138,7 @@
     font-size: 11px;
   }
 
-  .section ol li span {
+  .section div span {
     font-size: 11px;
     margin-left: 5px;
     color: #999;
@@ -117,7 +156,7 @@
   }
 
   #content > div {
-    width: 800px;
+    width: 650px;
     padding:1px 0px;
     clear: both;
     margin-bottom: 50px;
@@ -127,14 +166,17 @@
   #content > div img, #content > div .gist {
     max-width: 100%;
     box-shadow: 1px 1px 10px #cecece;
-    margin-bottom:10px;
   }
 
-  #content > div > span {
-    margin: 40px 0px 20px;
-    display: block;
-    width: 100%
+  #content > div a img:hover {
+    box-shadow: 1px 1px 10px #666;
   }
+
+  #content > div > span, #content .reading {
+    float: left;
+    margin: 0px 0px 20px;
+  }
+
 
   #content .gist span, #content .gist div {
     font-size: 11px;
@@ -164,10 +206,20 @@
   #content > div > span.small {
     float: left;
     width: 43%;
-    margin: 10px 10px 10px 0px;
+    margin: 20px 30px 20px 0px;
     font-size: 13px;
     color:#444;
+    line-height: 1.6em
   }
+
+
+  #content > div > span.small.tiny {
+  margin-top:10px;
+  font-size:11px;
+  font-weight: normal;
+  }
+
+
 
    #content > div > span.small.big {
     width: 89%;
